@@ -1,0 +1,161 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, sans-serif;
+    background:#0d1117;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.chat-container{
+    width:400px;
+    height:720px;
+    background:#161b22;
+    border-radius:20px;
+    overflow:hidden;
+    display:flex;
+    flex-direction:column;
+    box-shadow:0 0 25px rgba(0,0,0,0.5);
+}
+
+.chat-topo{
+    background:#b08968;
+    padding:20px;
+    color:white;
+}
+
+.perfil{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+.foto{
+    width:50px;
+    height:50px;
+    border-radius:50%;
+    background:white;
+    color:#b08968;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:25px;
+}
+
+.chat-mensagens{
+    flex:1;
+    padding:20px;
+    overflow-y:auto;
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+.mensagem{
+    padding:14px;
+    border-radius:15px;
+    max-width:85%;
+    line-height:1.5;
+    animation:subir 0.8s ease;
+}
+
+.bot{
+    background:#21262d;
+    color:white;
+    align-self:flex-start;
+}
+
+.usuario{
+    background:#b08968;
+    color:white;
+    align-self:flex-end;
+}
+
+.opcoes{
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+}
+
+.opcoes button{
+    background:#b08968;
+    color:white;
+    border:none;
+    padding:14px;
+    border-radius:12px;
+    cursor:pointer;
+    transition:0.3s;
+    font-size:15px;
+}
+
+.opcoes button:hover{
+    transform:scale(1.03);
+    background:#9c6644;
+}
+
+.galeria{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+    margin-top:10px;
+}
+
+.galeria img{
+    width:100%;
+    border-radius:15px;
+    animation:subir 1s ease;
+}
+
+.link-btn{
+    display:inline-block;
+    margin-top:10px;
+    background:#e63946;
+    color:white;
+    padding:12px 20px;
+    border-radius:12px;
+    text-decoration:none;
+    transition:0.3s;
+}
+
+.link-btn:hover{
+    background:#c1121f;
+}
+
+@keyframes subir{
+
+    from{
+        opacity:0;
+        transform:translateY(30px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+
+}
+
+::-webkit-scrollbar{
+    width:5px;
+}
+
+::-webkit-scrollbar-thumb{
+    background:#444;
+    border-radius:10px;
+}
+
+@media(max-width:500px){
+
+    .chat-container{
+        width:100%;
+        height:100vh;
+        border-radius:0;
+    }
+
+}
