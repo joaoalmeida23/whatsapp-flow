@@ -67,7 +67,7 @@ function responder(tipo){
         Clique abaixo para continuar o atendimento 😊
         <br><br>
 
-        <a href="https://wa.me/5511951228125"
+        <a href="https://wa.me/5511961410214"
            target="_blank"
            class="link-btn">
 
